@@ -3,6 +3,7 @@ package com.codepath.debuggingchallenges.activities;
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.codepath.debuggingchallenges.R;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchCurrentDayActivity(View view) {
         launchActivity(CurrentDayActivity.class);
+        Log.d("MYAPP", "launched currentDay");
     }
 
     public void launchMoviesActivity(View view) {
